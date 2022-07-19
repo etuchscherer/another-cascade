@@ -12,18 +12,22 @@ const Home: NextPage = () => {
         </h1>
 
         <p className={styles.description}>
+          We are experiencing technical dificulties
+        </p>
+
+        <p className={styles.description}>
           Customer Service
-          <code className={styles.code}>206.396.6864</code>
+          <code className={styles.code}>&nbsp;206.396.6864</code>
         </p>
 
         <p className={styles.description}>
           Fax
-          <code className={styles.code}>800.537.9459</code>
+          <code className={styles.code}>&nbsp;800.537.9459</code>
         </p>
 
         <p className={styles.description}>
           Email
-          <code className={styles.code}>service@cascaderisermanagement.com</code>
+          <code className={styles.code}>&nbsp;service@cascaderisermanagement.com</code>
         </p>
       </main>
 
@@ -33,7 +37,6 @@ const Home: NextPage = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
           <span className={styles.logo}>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
