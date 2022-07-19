@@ -5,8 +5,10 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   assetPrefix: isProd ? '/another-cascade/' : '',
-  images : {
-    unoptimized: true
+  experimental: {
+    images: {
+      unoptimized: true
+    }
   }
 }
 
