@@ -30,8 +30,9 @@ const Services = () => {
                 src={CARD1}
                 alt="Picture of the author"
                 className="card-img"
-                //   width={176}
-                //   height={42}
+                layout='intrinsic'
+                  // width={'100%'}
+                  // height={22}
               />
             </div>
             <div className="card-content">
@@ -54,8 +55,9 @@ const Services = () => {
                 src={CARD2}
                 alt="Picture of the author"
                 className="card-img"
+                layout='intrinsic'
                 //   width={176}
-                //   height={42}
+                // height={280}
               />
             </div>
             <div className="card-content">

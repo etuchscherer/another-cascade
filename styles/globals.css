@@ -29,7 +29,7 @@ a {
   font-family: "Kanit", Sans-serif;
   font-weight: 400;
   letter-spacing: 0.4px;
-  font-size: 12px;
+  font-size: 16px;
   position: absolute;
   top: 50%;
   /* left: 10%; */
@@ -62,7 +62,7 @@ a {
   text-transform: uppercase;
   font-family: Kanit;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .custom-navlink:hover {
@@ -196,6 +196,11 @@ a {
 
 .card-desc {
   padding: 8px;
+}
+
+.card-top-img {
+  max-height: 280px;
+  overflow: hidden;
 }
 
 .card-title {
@@ -339,10 +344,15 @@ a {
 }
 
 .footer-top {
+  padding-top: 30px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   margin-bottom: 30px;
+}
+
+.foot-right-border {
+  border-right: 2px solid #CCC;
 }
 
 .single-itm {
@@ -370,15 +380,11 @@ a {
   color: #000000;
   text-transform: uppercase;
   margin-top: 20px;
-  padding-left: 20px;
-  border-left: 2px solid #0075b1;
   margin-bottom: 15px;
   font-family: "Kanit", Sans-serif;
 }
 
 .left-icon {
-  border: 1px solid #0075b1;
-  padding: 6px 8px;
   color: #0075b1;
   margin-right: 10px;
 }
@@ -394,12 +400,6 @@ a {
   font-family: "Kanit", Sans-serif;
 }
 
-.foot-info-desc {
-  margin: 0;
-  font-size: 12px;
-  font-family: "Kanit", Sans-serif;
-}
-
 .foot-menu {
   list-style-type: none;
   padding-left: 0;
@@ -408,11 +408,6 @@ a {
 .foot-menu>li {
   padding: 10px;
   padding-left: 0;
-  border-bottom: 1px solid #0075b1;
-}
-
-.foot-menu>li:first-child {
-  border-top: 1px solid #0075b1;
 }
 
 .footer-menu-link {
@@ -494,8 +489,8 @@ a {
   background-position: center center;
 } */
 .contact-wrap {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  /* display: grid; */
+  /* grid-template-columns: repeat(2, 1fr); */
   gap: 20px;
   padding: 20px;
 }
@@ -556,6 +551,18 @@ a {
 
 .submit-btn {
   background-color: #0075b1;
+  color: #ffffff;
+  display: block;
+  width: 100%;
+  border: 1px solid #0075b1;
+  font-weight: bold;
+  font-family: "Kanit", Sans-serif;
+  letter-spacing: 1px;
+  padding: 6px 0;
+}
+
+.call-btn {
+  background-color: green;
   color: #ffffff;
   display: block;
   width: 100%;

@@ -4,6 +4,7 @@ import Head from 'next/head'
 import Footer from '../components/Footer';
 import Navigation from './Navigation';
 import TopBar from './TopBar';
+import Script from 'next/script'
 
 interface Props {
   // TODO - figure out this children type
@@ -27,6 +28,7 @@ const Layout = ({ children }: Props) => {
       <footer>
         <Footer />
       </footer>
+      <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossOrigin="anonymous" />
     </div>
   )
 }

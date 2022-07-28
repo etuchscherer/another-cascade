@@ -4,7 +4,7 @@ import { Container } from 'react-bootstrap'
 const TopBar = () => {
   return (
     <Container>
-      <div style={{display:"flex", alignItems:"center"}}>
+      <div className='d-flex align-items-center'>
           <a
             className="topbar-link"
             href="mailto:service@cascaderisermanagement.com"
