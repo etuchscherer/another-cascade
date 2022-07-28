@@ -1,47 +1,41 @@
 import type { NextPage } from 'next'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Discussion from '../components/Discussion'
+import HeroSection from '../components/HeroSection'
+import Services from "../components/Services"
+import ClientService from "../components/ClientService"
 
 const Home: NextPage = () => {
+  const backgroundImage = "./assets/cover-scaled.jpg";
+
+  const styling = {
+    backgroundImage: `url("${backgroundImage}")`,
+    backgroundSize: "cover",
+    backgroundColor: "#cccccc",
+    height: "88vh",
+    display: "flex",
+  };
+
   return (
-    <div className={styles.container}>
+    <div>
+      <main>
+        <section className="hero-section-wrap" style={styling}>
+          <div className="hero-overlay" />
+          <HeroSection />
+        </section>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Cascade Riser Management
-        </h1>
+        <section className="services-section-wrap">
+          <Services />
+        </section>
 
-        <p className={styles.description}>
-          We are experiencing technical dificulties
-        </p>
+        <section className="client-service-section">
+          <ClientService />
+        </section>
 
-        <p className={styles.description}>
-          Customer Service
-          <code className={styles.code}>&nbsp;206.396.6864</code>
-        </p>
+        {/* <section className="discussion">
+          <Discussion />
+        </section> */}
 
-        <p className={styles.description}>
-          Fax
-          <code className={styles.code}>&nbsp;800.537.9459</code>
-        </p>
-
-        <p className={styles.description}>
-          Email
-          <code className={styles.code}>&nbsp;service@cascaderisermanagement.com</code>
-        </p>
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
     </div>
   )
 }
