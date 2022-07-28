@@ -1,16 +1,649 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600;700;800&display=swap");
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Kanit", sans-serif;
 }
 
 a {
   color: inherit;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 * {
   box-sizing: border-box;
+}
+
+/* TOPBAR STYLES */
+.topbar {
+  background: #0075b1;
+  color: #fff;
+  align-items: center;
+  position: relative;
+}
+
+.topbar-link {
+  color: #fff;
+  font-family: "Kanit", Sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  font-size: 12px;
+  position: absolute;
+  top: 50%;
+  /* left: 10%; */
+  transform: translate(0, -50%);
+}
+
+.topbar-link:hover {
+  color: #fff;
+}
+
+.topbar>a {
+  vertical-align: baseline;
+  font-family: "Kanit", Sans-serif;
+  font-size: 100%;
+  font-weight: 400;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* NAVBAR STYLES */
+.custom-navlink {
+  color: #000;
+  margin-right: 20px;
+  animation: all ease-out 0.5s;
+  border-bottom: 2px solid #f8f9fa;
+  transition: all ease-out 0.5s;
+  text-transform: uppercase;
+  font-family: Kanit;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.custom-navlink:hover {
+  border-bottom: 2px solid #0075b1;
+  /* box-sizing: border-box; */
+}
+
+.custom-navlink:last-child {
+  margin-right: 0;
+}
+
+.topbar {
+  height: 4vh;
+}
+
+.navbar-custom-height {
+  height: 8vh;
+}
+
+/* .hero-section-wrap {
+  background-image: url("../public//assets/cover-scaled.jpg");
+  background-size: cover;
+  background-color: #cccccc; */
+/* height: 88vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+} */
+.hero-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #024568;
+  opacity: 0.5;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  z-index: 1;
+}
+
+.hero-content {
+  /* position: absolute; */
+  /* top: 50%; */
+  /* left: 10%; */
+  /* transform: translate(0, -50%); */
+  color: #fff;
+  z-index: 9999;
+}
+
+.hero-title {
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 40px;
+}
+
+.hero-desc {
+  width: 80%;
+  letter-spacing: 1.5px;
+}
+
+.custom-btn {
+  border: 1px solid #0075b1;
+  background: #0075b1;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 12px 24px;
+  border-radius: 3px;
+  transition: all 0.5s;
+  text-align: center;
+  color: #fff;
+  transition: all ease-out 0.5s;
+}
+
+.custom-btn:hover {
+  background-color: #0690d6;
+}
+
+/* ==========SERVICES STYLES=========== */
+.services-section-wrap {
+  padding: 45px 0px 45px 0px;
+  text-align: center;
+}
+
+.section-title {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-family: "Kanit", Sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.section-subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Kanit", Sans-serif;
+}
+
+.section-divider {
+  background: #0075b1;
+  width: 15%;
+  margin: 0 auto;
+  height: 2px;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.service-card {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: all ease-in-out 0.5s;
+}
+
+.service-card:hover {
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+  box-shadow: 0px 0px 10px -5px rgb(0 0 0 / 38%);
+}
+
+.card-desc {
+  padding: 8px;
+}
+
+.card-title {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-bottom: 15px;
+  padding-top: 10px;
+  font-family: "Kanit", Sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.card-subtitle {
+  padding-top: 15px;
+  color: #000000;
+  font-family: "Kanit", Sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.card-desc {
+  text-align: center;
+  color: #000000;
+  font-family: "Kanit", Sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+/* ===============CLIENT SERVICES SECTION====================== */
+.client-service-section {
+  background: #0075b1;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 5% 0% 5% 0%;
+  text-align: center;
+  color: #fff;
+}
+
+.client-service-devider {
+  background: #fff;
+}
+
+.serv-wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.single-serv {
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+/* .single-serv-inner {
+
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding: 10px;
+} */
+.single-serv-title {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+/* ==========ABOUT US HOME */
+.aboutus-home {
+  margin: 50px 0;
+}
+
+.about-home-wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.about-home-title {
+  font-size: 45px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #000;
+  /* padding-bottom: 10px; */
+}
+
+.about-home-divider {
+  margin: 0;
+}
+
+.about-home-desc {
+  margin: 10px 0;
+  text-align: left;
+  color: #000000;
+  font-family: "Kanit", Sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+/*============= LETS DISCUSS SECTION STYLES========== */
+.discussion {
+  background: #0075b1;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.discussion-wrap {
+  text-align: center;
+  color: #fff;
+  /* margin-top: 50px; */
+}
+
+.disscuss-btn {
+  background: #fff;
+  color: #000;
+}
+
+.disscuss-btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* ==========FOOTER STYLES========== */
+.ft-bg {
+  background: #f9f9f9;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.single-itm {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.foot-logo {
+  padding: 20px;
+  padding-left: 0;
+}
+
+.foot-logo-img {
+  width: 100%;
+}
+
+.foot-desc {
+  font-weight: 500;
+  font-family: "Kanit", Sans-serif;
+}
+
+.foot-title {
+  font-size: 17px;
+  color: #000000;
+  text-transform: uppercase;
+  margin-top: 20px;
+  padding-left: 20px;
+  border-left: 2px solid #0075b1;
+  margin-bottom: 15px;
+  font-family: "Kanit", Sans-serif;
+}
+
+.left-icon {
+  border: 1px solid #0075b1;
+  padding: 6px 8px;
+  color: #0075b1;
+  margin-right: 10px;
+}
+
+.info-icon {
+  color: #ead41c;
+  margin: 0;
+}
+
+.foot-info-title {
+  margin: 0;
+  font-weight: bold;
+  font-family: "Kanit", Sans-serif;
+}
+
+.foot-info-desc {
+  margin: 0;
+  font-size: 12px;
+  font-family: "Kanit", Sans-serif;
+}
+
+.foot-menu {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.foot-menu>li {
+  padding: 10px;
+  padding-left: 0;
+  border-bottom: 1px solid #0075b1;
+}
+
+.foot-menu>li:first-child {
+  border-top: 1px solid #0075b1;
+}
+
+.footer-menu-link {
+  color: #000;
+  font-family: "Kanit", Sans-serif;
+}
+
+.footer-bottom {
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 15px 0;
+}
+
+.footer-coptright-text {
+  margin: 0;
+  font-family: "Kanit", Sans-serif;
+  font-weight: 300;
+}
+
+/*=================================
+  ABOUT US PAGE DESIGN
+  ===================================*/
+.about-pd {
+  padding-left: 10px;
+}
+
+.about-bg-blue {
+  background: #e7f6ff;
+  padding: 50px 10px;
+  margin-top: -10px;
+}
+
+.about-bg-light {
+  padding: 50px 10px;
+}
+
+/* .about-header {
+  background-image: url("./assets/about-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -999;
+} */
+.about-header-overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  z-index: 1;
+  -moz-opacity: 0.5;
+  -webkit-opacity: 0.5;
+  opacity: 0.5;
+}
+
+.about-header-title {
+  color: #fff;
+  font-size: 44px;
+  font-weight: 400;
+  max-width: 100%;
+  z-index: 9999;
+  font-family: "Kanit", Sans-serif;
+  padding: 100px 0;
+  text-align: center;
+}
+
+/* ============================
+  CONTACT US PAGE DESIGN
+=============================== */
+/* .contact-header {
+  background-image: url("./assets/contact-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+} */
+.contact-wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.contact-inf-title {
+  color: #000000;
+  font-family: "Kanit", Sans-serif;
+  font-size: 35px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.contact-inf-divider {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.info-icon {
+  color: #0075b1;
+  width: 1.25em;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.contact-info-desc {
+  font-family: "Kanit", Sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  margin-bottom: 0;
+  color: #000;
+}
+
+.contact-form-title {
+  color: #000000;
+  font-family: "Kanit", Sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contact-input,
+.contact-textarea {
+  background-color: #ffffff;
+  border: 1px solid #818a91;
+  padding: 6px;
+  border-radius: 0px;
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  outline: none;
+  font-family: "Kanit", Sans-serif;
+  font-weight: 400;
+  color: #000000;
+}
+
+.submit-btn {
+  background-color: #0075b1;
+  color: #ffffff;
+  display: block;
+  width: 100%;
+  border: 1px solid #0075b1;
+  font-weight: bold;
+  font-family: "Kanit", Sans-serif;
+  letter-spacing: 1px;
+  padding: 6px 0;
+}
+
+/* -------RESPONSIVE STYLES----------- */
+@media (max-width: 1024px) {
+  .topbar {
+    height: auto;
+    /* padding-top: 0px; */
+    /* padding-bottom: 2px; */
+  }
+
+  .hero-title {
+    font-size: 25px;
+  }
+
+  .topbar-link {
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+
+  .navbar-custom-height {
+    height: auto;
+  }
+
+  .hero-desc {
+    width: 90%;
+  }
+
+  .hero-section-wrap {
+    height: 85vh;
+  }
+
+  .section-title {
+    font-size: 25px;
+  }
+
+  .section-subtitle {
+    font-size: 15px;
+  }
+
+  .services {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .serv-wrap {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .about-home-wrap {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .right-about-home {
+    padding: 15px;
+  }
+
+  .footer-top {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .footer-coptright-text {
+    width: 90%;
+    text-align: center;
+    font-size: 10px;
+  }
+
+  .contact-wrap {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0px;
+  }
+
+  .contact-info-desc {
+    font-size: 14px;
+  }
+
+  .contact-inf-title {
+    font-size: 25px;
+  }
+
+  .navbar-nav {
+    margin-top: 10px;
+  }
+
+  a.custom-navlink {
+    border-bottom: 1px solid #000;
+    padding: 5px;
+    padding-left: 0;
+  }
 }
