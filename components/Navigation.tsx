@@ -1,11 +1,10 @@
-import {useState} from 'react'
 import { Container } from 'react-bootstrap'
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import Link from "next/link"
 import Image from 'next/image'
 import LOGO from '../public/assets/logo.png'
+import { AiFillPhone } from 'react-icons/ai'
 
 const Navigation = () => {
 
@@ -20,7 +19,11 @@ const Navigation = () => {
             height={42}
           />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <div className="d-flex">
+          <a href="tel:2068184599" className='btn btn-success d-flex align-items-center d-lg-none d-xl-none d-xxl-none'>Call&nbsp;<AiFillPhone /></a>
+          &nbsp;
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        </div>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto" />
           <Nav>
