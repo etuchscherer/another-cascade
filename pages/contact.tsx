@@ -29,6 +29,7 @@ const contact = () => {
                 Send a message
               </h2>
 
+              <input type="text" name="_gotcha" className='d-none' />
               <div className="mb-3">
                 <label htmlFor="contactFormName" className="form-label">Name&nbsp;:</label>
                 <input type="text" id="contactFormName" className="form-control form-control-lg" placeholder='who are you ?' name='name' required />
