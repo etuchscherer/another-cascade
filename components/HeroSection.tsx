@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import * as React from 'react'
 import { Container } from 'react-bootstrap'
 
@@ -12,7 +13,9 @@ const HeroSection = () => {
           services, clients maintain a clean, code-complient, safe, and secure
           telecommunication infrastructure.
         </p>
-        <button className="get-in-touch-btn custom-btn">Get In Touch</button>
+        <Link href={'contact'}>
+          <a className='get-in-touch-btn custom-btn'>Get In Touch</a>
+        </Link>
       </div>
     </Container>
   );
