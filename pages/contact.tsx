@@ -51,7 +51,7 @@ const contact = () => {
                 <button type="submit" className="btn submit-btn mb-3" style={{ backgroundColor: '#0075b1', color: 'white'}}>
                   Send Message <HiOutlineMail />
                 </button>
-                <a href="tel:2068184599" className="btn w-100 text-uppercase text-center call-btn" style={{ backgroundColor: 'green', color: 'white' }}>
+                <a href="tel:2063966864" className="btn w-100 text-uppercase text-center call-btn" style={{ backgroundColor: 'green', color: 'white' }}>
                   Call <AiFillPhone />
                 </a>
               </div>
