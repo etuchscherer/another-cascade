@@ -21,7 +21,7 @@ const Layout = ({ children }: Props) => {
         <title>Cascade Riser Management</title>
         <meta name="description" content="Riser Management and Structured Cabling in the Seattle area. Serving Seattle, Renton, Bellevue, Tacoma and Redmond" />
         <meta name="keywords" lang="en" content="Seattle Cabling, wiring, data, cabling, voice, ds3, t1, dsl, cat5, cat6, video, contractor, fiber, optic, communications, cascade, vantage, cochran, services, structured cabling, cat5e, coax, cable, seattle, bellevue, washington, puget, sound" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico?" />
       </Head>
       <Navigation />
       {children}
