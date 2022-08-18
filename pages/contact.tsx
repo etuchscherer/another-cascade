@@ -22,40 +22,39 @@ const contact = () => {
       </div>
 
       <Container>
-        <div className="contact-wrap">
+        <div className="contact-wrap my-3">
           <div className="contact-right contact-form-wrap">
-            <form action="https://formspree.io/f/mzbonnlp" method='POST' className='needs-validation'>
-              <h2 className="text-uppercase mt-3">
-                Send a message
-              </h2>
+            <h2 className="text-uppercase mt-3">
+              Send a message
+            </h2>
 
-              <input type="text" name="_gotcha" className='d-none' />
-              <div className="mb-3">
-                <label htmlFor="contactFormName" className="form-label">Name&nbsp;:</label>
-                <input type="text" id="contactFormName" className="form-control form-control-lg" placeholder='who are you ?' name='name' required />
-              </div>
-              <div className="mb-3">
-                <label htmlFor="contactFormEmail" className="form-label">Email&nbsp;:</label>
-                <input type="email" id="contactFormEmail" className="form-control form-control-lg" placeholder='someone@example.com' name='email' required />
-              </div>
-              <div className="mb-3">
-                <label htmlFor="contactFormPhoneNumber" className="form-label">Phone&nbsp;:</label>
-                <input type="tel" id="contactFormPhoneNumber" className="form-control form-control-lg" placeholder='555-123-4567' name='phone' required />
-              </div>
-              <div className="mb-3">
-                <label htmlFor="contactFormMessage" className="form-label">Message&nbsp;:</label>
-                <textarea id="contactFormMessage" rows={10} className="form-control form-control-lg" placeholder='How can we help ?' name='message' required></textarea>
-              </div>
+            <p className="d-md-none m-2 mb-0">
+              phone: 206.396.6864
+            </p>
+            <p className="d-md-none m-2 mt-0">
+              email: service@cascaderisermanagement
+            </p>
 
-              <div className="d-grid gap-1">
-                <button type="submit" className="btn submit-btn mb-3" style={{ backgroundColor: '#0075b1', color: 'white'}}>
-                  Send Message <HiOutlineMail />
-                </button>
-                <a href="tel:2063966864" className="btn w-100 text-uppercase text-center call-btn" style={{ backgroundColor: 'green', color: 'white' }}>
-                  Call <AiFillPhone />
-                </a>
-              </div>
-            </form>
+            <div className="d-flex bd-highlight">
+              <a href='tel:2063966864' className="card d-flex justify-content-center align-items-center" style={{ backgroundColor: 'green', color: 'white', flex: "1 1 0", overflow: 'hidden', height: '33vh' }}>
+                <h2 className='d-flex align-items-center'>Call <AiFillPhone className='mx-2' /></h2>
+                <p className='d-none d-md-block'>206.396.6864</p>
+              </a>
+              <div className="d-flex align-items-center px-2 text-uppercase fw-bold">OR</div>
+              <a href='mailto:service@cascaderisermanagement.com?subject=question from cascaderisermanagement.com' className="card d-flex justify-content-center align-items-center" style={{ backgroundColor: '#0075b1', color: 'white', flex: "1 1 0", overflow: 'hidden', height: '33vh' }}>
+                <h2 className='d-flex align-items-center'>Write <HiOutlineMail className='mx-2'/></h2>
+                <p className='d-none d-md-block'>service@cascaderisermanagement.com</p>
+              </a>
+            </div>
+
+            {/* <div className="d-grid gap-1">
+              <button type="submit" className="btn submit-btn mb-3" style={{ backgroundColor: '#0075b1', color: 'white'}}>
+                Send Message <HiOutlineMail />
+              </button>
+              <a href="tel:2063966864" className="btn w-100 text-uppercase text-center call-btn" style={{ backgroundColor: 'green', color: 'white' }}>
+                Call <AiFillPhone />
+              </a>
+            </div> */}
           </div>
         </div>
       </Container>
